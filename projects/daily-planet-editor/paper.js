@@ -34,7 +34,7 @@ function howAttractedIsLoisLaneToMe() {
     return Math.floor((Math.random() * 10) + 1);
 }
 
-consol.log(HowAttractedIsLoisLaneToMe()) ;
+console.log(HowAttractedIsLoisLaneToMe()) ;
 
 var clarkKent =true;
 var superman = false;

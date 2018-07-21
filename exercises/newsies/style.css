@@ -1,0 +1,114 @@
+* {
+    background-color: rgb(235, 235, 235);
+}
+
+.clearfix { 
+    overflow: auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 600%;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 300;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 5px solid rgb(0, 0, 0);
+    margin: 1em 0;
+    padding: 0;
+}
+
+h2 {
+    padding-top: 0px;
+    margin-top: 0px;
+    font-style: italic;
+    background-color: rgb(235, 235, 235);
+}
+
+h5 {
+    background-color: rgb(235, 235, 235);
+}
+
+.classifields {
+    border: 1px solid grey;
+    box-shadow: 3px 3px rgb(107, 107, 107);
+}
+
+/*----------- SPORTS SECTION ---------*/
+
+.sports {
+    background-color: rgb(235, 235, 235);
+    display: inline-block; 
+    width: 45%;
+    float: left;
+    padding: 20px;
+    background-color: rgb(235, 235, 235);
+    border: 1px
+}
+
+.sports img{
+    margin: 0px 10px 10px 0;
+    width: 70%;
+    float: left;
+    background-color: rgb(235, 235, 235);
+}
+
+.sports p {
+    display: inline;
+    background-color: rgb(235, 235, 235);
+}
+
+/*----------- HEALTH SECTION ---------*/
+
+
+.health {
+    background-color: rgb(235, 235, 235);
+    display: inline-block;
+    width: 45%;
+    padding: 20px;
+}
+
+.health img {
+    padding: 0px 10px 10px 0;
+    width: 45%;
+    float: left;
+}
+
+.health p {
+    display: inline;
+}
+
+
+/*----------- AGRICULTURE SECTION ---------*/
+
+
+.agriculture {
+    display: block;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.agriculture h2 {
+    text-align: center;
+}
+
+.agriculture img {
+    float: right;
+    width: 60%;
+}
+
+.agriculture p {
+    display: inline;
+    text-align: left;
+}
+
+.classifields {
+    background-color: rgb(235, 235, 235);
+}
+
+
