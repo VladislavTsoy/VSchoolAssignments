@@ -1,5 +1,5 @@
-* {
-    background-color: rgb(235, 235, 235);
+body {
+    background-color: rgb(212, 212, 212);
 }
 
 .clearfix { 
@@ -26,50 +26,49 @@ h2 {
     padding-top: 0px;
     margin-top: 0px;
     font-style: italic;
-    background-color: rgb(235, 235, 235);
-}
-
-h5 {
-    background-color: rgb(235, 235, 235);
+  
 }
 
 .classifields {
     border: 1px solid grey;
-    box-shadow: 3px 3px rgb(107, 107, 107);
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row-1 {
+    display: table-cell;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    background-color: rgb(241, 241, 241);
 }
 
 /*----------- SPORTS SECTION ---------*/
 
 .sports {
-    background-color: rgb(235, 235, 235);
-    display: inline-block; 
-    width: 45%;
+    width: 385px;
     float: left;
-    padding: 20px;
-    background-color: rgb(235, 235, 235);
+    padding: 10px;
     border: 1px
 }
 
 .sports img{
     margin: 0px 10px 10px 0;
-    width: 70%;
+    width: 200px;
     float: left;
-    background-color: rgb(235, 235, 235);
 }
 
 .sports p {
     display: inline;
-    background-color: rgb(235, 235, 235);
 }
 
 /*----------- HEALTH SECTION ---------*/
 
 
 .health {
-    background-color: rgb(235, 235, 235);
-    display: inline-block;
-    width: 45%;
-    padding: 20px;
+    float: left;
+    width: 385px;
+    padding: 10px;
 }
 
 .health img {
@@ -87,12 +86,9 @@ h5 {
 
 
 .agriculture {
-    display: block;
-    text-align: center;
-    margin-top: 80px;
-    margin-bottom: 80px;
+    float: left;
+    width: 385px;
 }
-
 .agriculture h2 {
     text-align: center;
 }
@@ -105,10 +101,6 @@ h5 {
 .agriculture p {
     display: inline;
     text-align: left;
-}
-
-.classifields {
-    background-color: rgb(235, 235, 235);
 }
 
 
