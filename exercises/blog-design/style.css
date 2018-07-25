@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(/resources/mount.jpg);
+    background-size: cover;
+}
+/*------------------ NAVBAR ------------------*/
+.nav-bar {
+    background-color: rgba(0, 0, 0, 0.644);
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    z-index: 1;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 200;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+    float: right;
+    transition: .3s
+}
+
+.nav-bar a:hover {
+    transition: .3s;
+    color: #82ccdd;
+}
+
+.nav-bar #nav-link {
+    margin-top: 25px;
+    margin-right: 30px;
+}
+
+/*------------------ MAIN-CONTAINER ------------------*/
+
+.main-container {
+    background-color: rgb(250, 250, 250);
+    height: auto;
+    width: 600px;
+    padding-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 60px;
+}
+
+.main-container .blog-post {
+    width: auto;
+    height: auto;
+    padding: 50px 40px 50px 40px;
+}
+
+.blog-heading h3{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-family: sans-serif;
+    font-weight: 200;
+}
+.blog-heading h6 {
+    text-transform: uppercase;
+    color: grey;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 10px;
+}
+
+.blog-content {
+    margin-top: 20px;
+}
+
+.post-1 img {
+    width: 300px;
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.post-2 img {
+    width: 200px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.post-3 img {
+    width: 160px;
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.blog-content p {
+    font-family: sans-serif;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+hr {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    color: grey;
+}
+
+
