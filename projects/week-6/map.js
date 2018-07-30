@@ -1,12 +1,5 @@
-var map;
-// var myLatLong = {lat: 40.7608, lng: -111.8910}
-//     var mapOptions = {
-//         center: {
-//             lat: 40.7608, 
-//             lng: -111.8910
-//         },
-//         zoom: 12
-//     }
+var map
+
 function initAutocomplete() {
     var map = new google.maps.Map(document.getElementById('map'), {
         center: {
@@ -16,16 +9,17 @@ function initAutocomplete() {
       zoom: 15,
       mapTypeId: 'roadmap'
     });
+
     var myLatLng = {
       lat: 40.7608, 
       lng: -111.8910
     };
+
     var marker = new google.maps.Marker({
       position: myLatLng,
       map: map,
       title: 'Hello World!'
     });
-  
 
     // Create the search box and link it to the UI element.
     var input = document.getElementById('pac-input');

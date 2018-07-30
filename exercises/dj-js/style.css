@@ -1,0 +1,34 @@
+
+#dj-btn {
+    position: relative;
+    left: 35%;
+    top: 200px;
+    box-shadow: 20px 20px 20px grey;
+    height: 300px;
+    width: 300px;
+    transition: .2s;
+    font-size: 30px;
+    border: 5px solid black;
+}
+
+#dj-btn:hover {
+    transition: .5s;
+    background-color: blue
+}
+
+#dj-button:active {
+    position: relative;
+    top: 5px;
+    left: 5px;
+    transition: .4s;
+}
+
+#reset-btn {
+    position: relative;
+    left: 37%;
+    top: 180px;
+    height: 100px;
+    width: 100px;
+    box-shadow: 20px 20px 20px grey;
+    transition: .2s;
+}

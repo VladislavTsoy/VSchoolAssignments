@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>itinerant</title>
+    <link rel="stylesheet" href="/vendors/css/normalize.css">
+    <link href="/vendors/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/vendors/css/grid.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet"> 
+    <link rel="stylesheet" href="/resources/css/style.css">
+    <link rel="stylesheet" href="/resources/css/queries.css">
+</head>
+<body>
+    <header id='main-header'>
+        <nav>
+            <div class="fullscreen-video-wrap">
+                <video src="/resources/data/JAPAN  Travel Film.mp4" autoplay='true' loop='true' muted='muted'></video>
+            </div>
+            <div class="row">
+                <a href='/index.html'><img class='logo' src="/resources/img/itinerant-logo-white.png" alt="logo"></a>
+                <ul class="main-nav">
+                    <li><a id='active-tab' href='/index.html'>home</a></li>
+                    <li><a href='about.html'>What we do</a></li>
+                    <li><a href='/contact.html'>Contact us</a></li>
+                    <li><a id='btn-login' href='#'>Login</a></li>
+                    <li><a id='btn-sign' href='#'>Sign up</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="hero-text-box">
+            <h1 id='hero-content'>Your wolf pack has grown by one.</h1>
+            <a class='btn btn-full' id='btn-login-main' href='#'>Login</a>
+            <a class='btn btn-ghost' href='#'>Sign up</a>
+        </div>
+
+        <div id='login-pop'>
+            <button id='login-close'>x</button>
+            <form class='my-login'>
+                <p>username:</p> <input type="text" name='user-name-login'>
+                <br><p>password:</p> <input type="text" name='user-password-login'>
+                <div class='login-submit'>
+                    <button>submit</button>
+                    <a href="#">cancel</a>
+                </div>
+            </form>
+        </div>
+
+        <footer>
+                <a href="#" id='ig'><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="#" id='tw'><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="#" id='facebook'><ion-icon name="logo-facebook"></ion-icon></a>
+        </footer>
+    </header>
+
+<script src="https://unpkg.com/ionicons@4.2.5/dist/ionicons.js"></script>
+<script src='/resources/js/app.js'></script>
+</body>
+</html>

@@ -14,8 +14,7 @@ function uptown1(arr){
 }
 
 function uptown2(arr){
-    arr.reverse();
-    console.log(arr.join(' '));
+    console.log(arr.reverse().join(' '));
 }
 
 function uptown3(arr){
@@ -37,6 +36,6 @@ function uptown4(arr){
     console.log(arr.join(' '));
 }
 
-uptown4(lyrics);
+uptown3(lyrics);
 
 

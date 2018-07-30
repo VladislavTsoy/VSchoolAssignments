@@ -1,0 +1,58 @@
+/* 
+red -235, 34, 31 
+yel - 255, 218, 9 */
+@font-face {
+    font-family: mario;
+    src: url(/SuperMario256.ttf);
+}
+
+html {
+    font-family: 'mario', sans-serif;
+}
+
+h1, h2, p {
+    color: rgb(235, 34, 31);
+}
+
+h1 {
+    font-size: 280%;
+}
+h2 {
+    font-size: 200%;
+}
+
+.container {
+    display: flex;
+    height: 200px;
+    align-items: center;
+}
+
+header {
+    background-color: yellow;
+    padding-left: 20px;
+}
+
+main {
+    background-color: red;
+    justify-content: center;
+}
+
+#container-main{
+    height: 300px;
+}
+
+footer {
+    background-color: yellow;
+    justify-content: flex-end;
+}
+
+.about-me {
+    flex-direction: column;
+}
+
+#mush {
+    height: 100px;
+
+}
+
+

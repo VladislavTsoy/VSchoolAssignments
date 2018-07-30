@@ -1,0 +1,123 @@
+/* colors */
+/*  
+
+american-rover: #636e72
+soothing-breeze: #b2bec3
+dracula-orchard: #2d3436
+
+*/
+
+/*---------------------------------------------*/
+/* HEADER */
+/*---------------------------------------------*/
+
+.header-about{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(/resources/img/background-1.jpg);
+    background-attachment: fixed;
+    background-position: bottom;
+    height: 60vh;
+    background-size: cover;
+}
+
+.about-quote {
+    line-height: 145%;
+    word-spacing: 10px;
+    letter-spacing: 2px;
+}
+
+.aboutus-text-box {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 1140px;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*---------------------------------------------*/
+/* SECTION - 1 */
+/*---------------------------------------------*/
+
+.aboutus-section {
+    padding-top: 40px;
+}
+
+.longcopy {
+    text-align: center;
+    line-height: 145%;
+}
+
+.icon-big {
+    margin-bottom: 40px;
+}
+
+.box {
+    margin-top: 80px;
+}
+
+.box p {
+    margin-top: 15px;
+    line-height: 160%;
+    margin-bottom: 100px;
+}
+
+
+/*---------------------------------------------*/
+/* SECTION - 2 */
+/*---------------------------------------------*/
+
+.testimonials-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/resources/img/europe.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.testimonials-section h2 {
+    margin-top: 60px;
+    color: #fff;
+}
+
+.testimonials-section h2:after {
+    background-color: #fff;
+}
+
+blockquote {
+    margin-top: 30px;
+    color: white;
+    line-height: 150%;
+    font-style: italic;
+    position: relative;
+}
+
+blockquote:before {
+    content: "\201C";
+    font-size: 500%;
+    position: absolute;
+    display: block;
+    top: -5%;
+    left: -5%;
+}
+
+cite {
+    display: block;
+    margin-top: 25px;
+    font-size: 90%;
+    margin-bottom: 30px;
+}
+
+blockquote img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+
+/*---------------------------------------------*/
+/* FOOTER NAV */
+/*---------------------------------------------*/

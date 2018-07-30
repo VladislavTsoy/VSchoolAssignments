@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="full">
+
+    </div>
+    
+    <div class='container'>
+        <h1>FLYER INFORMATION</h1>
+        
+        <form name='travelForm'>
+            First Name: <input type="text" name='fName' required>
+            Last Name: <input type="text" name='lName' required>
+            Age: <input type="number" name='age' required>
+            <div id="gen">
+                Gender: <br><br>
+                Male<input type="radio" name='gender' value='male' required>
+                Female<input type="radio" name='gender' value='female'> 
+                Other<input type="radio" name='gender' value='other'>
+            </div>
+            <br>
+            <br>
+
+            <div id="dest">
+                Destination: <br><br>
+                New York City<input type="checkbox" name='loc' value='New York City'>
+                Los Angeles<input type="checkbox" name='loc' value='Los Angeles'>
+                Salt Lake City<input type="checkbox" name='loc' value='Salt Lake City'>
+            </div>
+            <br>
+            <br>
+            <div id="dietres">
+                Dietary restrictions: <br><br>
+                Vegetarian<input type="checkbox" name='diet' value='Vegetarian'>
+                Vegan<input type="checkbox" name='diet' value='Vegan'>
+                Gluten Free<input type="checkbox" name='diet' value='Gluten Free'>
+            </div>
+            <br>
+            <br>
+            <button>SEND IT</button>
+
+        </form>
+    </div>
+    
+<script src='app.js'></script>
+</body>
+</html>
+
