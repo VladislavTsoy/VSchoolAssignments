@@ -7,32 +7,51 @@
     <title>Document</title>
     <link rel="stylesheet" href="/vendors/css/normalize.css">
     <link rel="stylesheet" href="/vendors/css/animate.css">
-    <link href="/vendors/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/vendors/css/ionicons.min.css">
     <link rel="stylesheet" href="/vendors/css/grid.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans:700,800,900" rel="stylesheet"> 
-    <link rel="stylesheet" href="/">
+
     <link rel="stylesheet" href="/resources/css/style.css">
     <link rel="stylesheet" href="/resources/css/constactstyle.css">
     <link rel="stylesheet" href="/resources/css/aboutstyle.css">
+
+    <link rel="stylesheet" href="/resources/css/aboutqueries.css">
+    <link rel="stylesheet" href="/resources/css/queries.css">
+    <link rel="stylesheet" href="/resources/css/contactqueries.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet"> 
 </head>
 <body>
     <header class='header-contact'>
         <nav>
-                <div class="row">
-                    <a href='/index.html'><img class='logo' src="/resources/img/itinerant-logo-white.png" alt="logo"></a>
-                    <ul class="main-nav">
-                        <li><a href='/index.html'>Home</a></li>
-                        <li><a href='/about.html'>What we do</a></li>
-                        <li><a id='active-tab' href='/contact.html'>Contact us</a></li>
-                        <li><a id='btn-login' href='#'>Login</a></li>
-                        <li><a id='btn-sign' href='#'>Sign up</a></li>
-                    </ul>
-                </div>
-            </nav>
-            <div class="contact-text-box">
-                <h1 class='about-quote'></h1>
+            <div class="row">
+                <a href='/index.html'><img class='logo' src="/resources/img/itinerant-logo-white.png" alt="logo"></a>
+                <ul class="main-nav js--main-nav">
+                    <a href='/index.html'><img class='logo mobile-op' src="/resources/img/itinerant-logo-white.png" alt="logo"></a>
+                    <li><a href='/index.html'>Home</a></li>
+                    <li><a href='/about.html'>What we do</a></li>
+                    <li><a id='active-tab' href='/contact.html'>Contact us</a></li>
+                    <li><a id='btn-login' href='#'>Login</a></li>
+                    <li><a id='btn-sign' href='#'>Sign up</a></li>
+                    <a class='mobile-nav-icon js--nav-icon' id='mobile-close'><ion-icon class="name" name="close"></ion-icon></a>
+                </ul>
+                <a class='mobile-nav-icon js--nav-icon'><ion-icon name="menu"></ion-icon></a>
             </div>
+        </nav>
+        <div class="aboutus-text-box">
+            <h1 class='about-quote js--wp-2'>give us a buzz.</h1>
+        </div>
+
+        <div id='login-pop'>
+            <button id='login-close'>x</button>
+            <form class='my-login'>
+                <p>username:</p> <input type="text" name='user-name-login'>
+                <br><p>password:</p> <input type="text" name='user-password-login'>
+                <div class='login-submit'>
+                    <button>submit</button>
+                    <a href="#">cancel</a>
+                </div>
+            </form>
+        </div>
 
     </header>
     <section class='aboutus-section'>
@@ -41,8 +60,8 @@
         </div>
         <div class='contact-container'>
             <form class='contact-form'>
-                Your name: <input type='text'>
-                Your email:<input type='email'>
+                Your name: <input type='text' required>
+                Your email:<input type='email' required>
                 How'd you hear about us?<select>
                     <option value="ig">Instagram</option>
                     <option value="tw">Twitter</option>
@@ -50,11 +69,38 @@
                     <option value="friend">Friend</option>
                     <option value="other">Other</option>
                 </select>
-                <textarea rows='4' cols='50'>You message...</textarea>
+                <textarea rows='4' cols='50' required>Your message..</textarea>
                 <button class='btn-ghost btn' id='submit-form-btn'>send it!</button>
             </form>
         </div>
     </section>
-    
+    <footer class='footer-common'>
+        <div class='row'>
+            <div class='col span-1-of-2'>
+                <ul class='footer-nav'>
+                    <li><a href="/index.html">home</a></li>
+                    <li><a href="/about.html">what we do</a></li>
+                    <li><a href="/contact.html">contact us</a></li>
+                    <li><a href="">login</a></li>
+                    <li><a href="">signup</a></li>
+                </ul>
+            </div>
+            <div class='col span-1-of-2'>
+                <ul class='footer-social-links'> 
+                    <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class='row copyright'>
+            <p>Copyright Itinerate spirit &copy; est. 2018</p>
+        </div>
+    </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src='/resources/js/animation.js'></script>
+<script src='/resources/js/contactapp.js'></script>
+<script src='/vendors/js/jquery.waypoints.min.js'></script>
+<script src="https://unpkg.com/ionicons@4.2.5/dist/ionicons.js"></script>
 </body>
 </html>

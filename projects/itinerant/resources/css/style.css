@@ -49,6 +49,7 @@ h1 {
 }
 
 h2 {
+    margin-top: 30px;
     font-size: 180%;
     margin-bottom: 30px;
     text-align: center;
@@ -137,6 +138,10 @@ header {
     float: left;
 }
 
+.logo.mobile-op {
+    display: none;
+}
+
 .main-nav {
     float: right;
     list-style: none;
@@ -165,6 +170,23 @@ header {
     color: #fff;
     border-bottom: 2px solid #b2bec3;
 }
+
+/* MOBILE NAVIGATION*/
+
+.mobile-nav-icon {
+    display: none;
+    float: right;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.mobile-nav-icon ion-icon {
+    font-size: 200%;
+    color: white;
+}
+
+
+/* VIDEO BACKGROUND*/
 
 .fullscreen-video-wrap {
     position: absolute;
@@ -266,7 +288,7 @@ header {
 /* FOOTER */
 /*---------------------------------------------*/
 
-footer {
+#main-page-footer {
     display: flex;
     justify-content: center;
     position: relative;
@@ -301,5 +323,24 @@ footer a:visited {
     /* border: 1px solid #3b5998; */
 } 
 
+/*---------------------------------------------*/
+/* ANIMATION */
+/*---------------------------------------------*/
 
+.js--wp-3 {
+    opacity: 0;
+}
 
+.js--wp-3.animated {
+    transition: .3s;
+    opacity: 1s;
+}
+
+.js--wp-4 {
+    opacity: 0;
+}
+
+.js--wp-4.animated {
+    transition: .3s;
+    opacity: 1s;
+}

@@ -12,6 +12,10 @@
     margin-left: auto;
     margin-right: auto;
     background-color: rgb(241, 241, 241);
+    margin-bottom: 80px;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 1%;
+    box-shadow: 40px 40px 40px rgb(206, 206, 206);
 }
 .contact-container input,
 .contact-container select,
@@ -29,6 +33,7 @@
 
 .contact-container select {
     font-family: 'Lato', 'Arial', sans-serif;
+    padding: 5px 40px 5px 0;
 }
 
 textarea {
@@ -39,9 +44,78 @@ textarea {
 
 #submit-form-btn {
     cursor: pointer;
+    font-weight: 300;
     color: black;
 }
 
 #submit-form-btn:hover {
+    background-color: rgba(85, 85, 85, 0.322);
+}
+
+
+/*---------------------------------------------*/
+/* FOOTER */
+/*---------------------------------------------*/
+
+.footer-common {
+    background-color: #555;
+    height: auto;
+}
+
+.footer-nav{
+    display: flex;
+}
+
+.footer-nav li {
+    margin-top: 20px;
+    list-style: none;
     
+}
+
+.footer-nav li a:link, 
+.footer-nav li a:visited {
+    text-decoration: none;
+    color: rgb(206, 206, 206);
+    cursor: pointer;
+    font-size: 80%;
+    margin-right: 10px;
+    transition: 0.2s
+}
+
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: rgba(170, 170, 170, 0.658);
+    transition: 0.2s;
+    
+}
+
+.footer-social-links {
+    display: flex;
+    margin-top: 20px;
+    justify-content: flex-end;
+}
+
+.footer-social-links li {
+    list-style: none;
+}
+.footer-social-links li a:link,
+.footer-social-links li a:visited  {
+    color: rgb(206, 206, 206);
+    transition: .2s;
+    font-size: 110%;
+}
+
+.footer-social-links li a:hover,
+.footer-social-links li a:active {
+    color: rgba(170, 170, 170, 0.658);
+    transition: 0.2s;
+}
+
+.copyright {
+    margin-top: 10px;
+    padding-bottom:20px;
+    color: rgb(206, 206, 206);
+    text-align: center;
+    font-size: 80%;
 }

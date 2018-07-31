@@ -1,0 +1,85 @@
+@media only screen and (max-width: 500px) {
+    .row {
+        max-width: 414px;
+    }
+
+
+    .aboutus-text-box {
+        max-width: 414px;
+    }
+
+    .about-quote {
+        font-size: 100%;
+    }
+
+    .longcopy {
+        padding: 0px 15px;
+        font-size: 90%;
+    }
+
+    .testimonials-section {
+        width: 414px;
+    }
+
+    .js--wp-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 0 15px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .icon-big {
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+
+    .box {
+        margin-top: 20px;
+    }
+
+    .box p {
+        margin-bottom: 30px;
+        font-size: 90%;
+    }
+
+    .q-box {
+        padding: 0 20px;
+    }
+    .q-box cite {
+        float: right;
+    }
+
+    .footer-nav li {
+        margin-top: 5px;
+    }
+    .footer-nav li:first-child {
+        margin-top: 20px;
+    }
+
+    .footer-common {
+        width: 414px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .footer-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-social-links {
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 960px) {
+    .about-quote {
+        font-size: 200%;
+    }
+}

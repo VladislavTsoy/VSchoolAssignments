@@ -7,29 +7,49 @@
     <title>itinerant</title>
     <link rel="stylesheet" href="/vendors/css/normalize.css">
     <link rel="stylesheet" href="/vendors/css/grid.css">
-    <link href="/vendors/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/vendors/css/ionicons.min.css" >
     <link rel="stylesheet" href="/vendors/css/animate.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans:700,800,900" rel="stylesheet"> 
+
     <link rel="stylesheet" href="/resources/css/aboutstyle.css">
     <link rel="stylesheet" href="/resources/css/style.css">
+    <link rel="stylesheet" href="/resources/css/constactstyle.css">
+    
+    <link rel="stylesheet" href="/resources/css/aboutqueries.css">
+    <link rel="stylesheet" href="/resources/css/queries.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:700,800,900" rel="stylesheet"> 
 </head>
 <body>
     <header class='header-about'>
         <nav>
             <div class="row">
                 <a href='/index.html'><img class='logo' src="/resources/img/itinerant-logo-white.png" alt="logo"></a>
-                <ul class="main-nav">
+                <ul class="main-nav js--main-nav">
+                        <a href='/index.html'><img class='logo mobile-op' src="/resources/img/itinerant-logo-white.png" alt="logo"></a>
                     <li><a href='/index.html'>Home</a></li>
                     <li><a id='active-tab' href='/about.html'>What we do</a></li>
                     <li><a href='/contact.html'>Contact us</a></li>
                     <li><a id='btn-login' href='#'>Login</a></li>
                     <li><a id='btn-sign' href='#'>Sign up</a></li>
+                    <a class='mobile-nav-icon js--nav-icon' id='mobile-close'><ion-icon class="name" name="close"></ion-icon></a>
                 </ul>
+                <a class='mobile-nav-icon js--nav-icon'><ion-icon name="menu"></ion-icon></a>
             </div>
         </nav>
         <div class="aboutus-text-box">
-            <h1 class='about-quote'>There's an invisible thread<br>that connects us all.</h1>
+            <h1 class='about-quote js--wp-2'>There's an invisible thread<br>that connects us all.</h1>
+        </div>
+        <div id='login-pop'>
+            <button id='login-close'>x</button>
+            <form class='my-login'>
+                <p>username:</p> <input type="text" name='user-name-login'>
+                <br><p>password:</p> <input type="text" name='user-password-login'>
+                <div class='login-submit'>
+                    <button>submit</button>
+                    <a href="#">cancel</a>
+                </div>
+            </form>
         </div>
     </header>
 
@@ -69,17 +89,17 @@
         </div>
 
         <div class="row">
-            <div class="col span-1-of-3">
+            <div class="col span-1-of-3 q-box">
                 <blockquote>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A voluptatem quod, enim eaque natus facilis maxime. Quasi nisi tempora accusantium rem alias. Dolorem quasi ut facilis, quo minima alias cupiditate.
                     <cite><img src='/resources/img/customer-2.jpg'>Vlad Tsoy</cite>
                 </blockquote>
             </div>
-            <div class="col span-1-of-3">
+            <div class="col span-1-of-3 q-box">
                 <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, modi maiores distinctio molestias nemo at odit assumenda asperiores reprehenderit fugiat. Beatae exercitationem reprehenderit.
                     <cite><img src='/resources/img/customer-1.jpg'>Vlad Tsoy</cite>
                 </blockquote>
             </div>
-            <div class="col span-1-of-3">
+            <div class="col span-1-of-3 q-box">
                 <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem maiores iste adipisci sint culpa fugit dolore alias, ex aliquam consequuntur nam, veniam ad id sit sed eveniet, ullam tempore minus.
                     <cite><img src='/resources/img/customer-3.jpg'>Vlad Tsoy</cite>
                 </blockquote>
@@ -87,10 +107,58 @@
         </div>
 
     </section>
-    <footer class='footer-block'>
+    <section class='row team-section'>
+        <h2 class=team-header''>The Team</h2>
+        <div class="team-container js--wp-7">
+            <div class='col span-1-of-3 team-box'>
+                <img src="/resources/img/customer-3.jpg" alt="">
+                <h3>Vlad Tsoy</h3>
+                <hr>
+                <p class='team-bio'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi unde ducimus vero? Esse repellat nulla natus, architecto quibusdam maxime quod facere fugiat quaerat quas voluptates.</p>
+            </div>
+            <div class='col span-1-of-3 team-box'>
+                <img src="/resources/img/customer-1.jpg" alt="">
+                <h3>Vlad Tsoy</h3>
+                <hr>
+                <p class='team-bio'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quisquam dolore deleniti ad quos, reiciendis provident omnis nihil ipsa corporis sunt error eos? Dolorem veritatis, ut id quia ipsam deleniti!</p>
+            </div>
+            <div class='col span-1-of-3 team-box'>
+                <img src="/resources/img/customer-2.jpg" alt="">
+                <h3>Vlad Tsoy</h3>
+                <hr>
+                <p class='team-bio'>Lorem ipsum dolor sit, amet conse Aliquid, modi met voluptatibus, excepturi placeat neque odit quod eos? Dolor molestias consequuntur magnam?</p>
+            </div>
 
-    </footer>
+        </div>
+    </section>
+    <footer class='footer-common'>
+            <div class='row'>
+                <div class='col span-1-of-2'>
+                    <ul class='footer-nav'>
+                        <li><a href="/index.html">home</a></li>
+                        <li><a href="/about.html">what we do</a></li>
+                        <li><a href="/contact.html">contact us</a></li>
+                        <li><a href="">login</a></li>
+                        <li><a href="">signup</a></li>
+                    </ul>
+                </div>
+                <div class='col span-1-of-2'>
+                    <ul class='footer-social-links'> 
+                        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class='row copyright'>
+                <p>itinerate spirit &copy; est. 2018</p>
+            </div>
+        </footer>
 
-<script src='animation.js'></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+<script src='/resources/js/animation.js'></script>
+<script src='/resources/js/contactapp.js'></script>
+<script src='/vendors/js/jquery.waypoints.min.js'></script>
+<script src="https://unpkg.com/ionicons@4.2.5/dist/ionicons.js"></script>
 </body>
 </html>

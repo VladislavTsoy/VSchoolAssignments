@@ -6,11 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>itinerant</title>
     <link rel="stylesheet" href="/vendors/css/normalize.css">
-    <link href="/vendors/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/vendors/css/ionicons.min.css">
     <link rel="stylesheet" href="/vendors/css/grid.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet"> 
+    <link rel="stylesheet" href="/vendors/css/animate.css">
+
     <link rel="stylesheet" href="/resources/css/style.css">
     <link rel="stylesheet" href="/resources/css/queries.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet"> 
+
 </head>
 <body>
     <header id='main-header'>
@@ -20,19 +24,24 @@
             </div>
             <div class="row">
                 <a href='/index.html'><img class='logo' src="/resources/img/itinerant-logo-white.png" alt="logo"></a>
-                <ul class="main-nav">
+                <ul class="main-nav js--main-nav">
+                    <a href='/index.html'><img class='logo mobile-op' src="/resources/img/itinerant-logo-white.png" alt="logo"></a>
                     <li><a id='active-tab' href='/index.html'>home</a></li>
                     <li><a href='about.html'>What we do</a></li>
                     <li><a href='/contact.html'>Contact us</a></li>
                     <li><a id='btn-login' href='#'>Login</a></li>
                     <li><a id='btn-sign' href='#'>Sign up</a></li>
+                    <a class='mobile-nav-icon js--nav-icon' id='mobile-close'><ion-icon class="name" name="close"></ion-icon></a>
                 </ul>
+                <a class='mobile-nav-icon js--nav-icon'><ion-icon class="name" name="menu"></ion-icon></a>
             </div>
         </nav>
         <div class="hero-text-box">
-            <h1 id='hero-content'>Your wolf pack has grown by one.</h1>
-            <a class='btn btn-full' id='btn-login-main' href='#'>Login</a>
-            <a class='btn btn-ghost' href='#'>Sign up</a>
+            <h1 class='js--wp-3' id='hero-content'>Your wolf pack has grown by one.</h1>
+            <div class=''>
+                <a class='btn btn-full' id='btn-login-main' href='#'>Login</a>
+                <a class='btn btn-ghost' href='#'>Sign up</a>
+            </div>
         </div>
 
         <div id='login-pop'>
@@ -47,14 +56,17 @@
             </form>
         </div>
 
-        <footer>
+        <footer id='main-page-footer'>
                 <a href="#" id='ig'><ion-icon name="logo-instagram"></ion-icon></a>
                 <a href="#" id='tw'><ion-icon name="logo-twitter"></ion-icon></a>
                 <a href="#" id='facebook'><ion-icon name="logo-facebook"></ion-icon></a>
         </footer>
     </header>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src='/resources/js/animation.js'></script>
 <script src="https://unpkg.com/ionicons@4.2.5/dist/ionicons.js"></script>
+<script src='/vendors/js/jquery.waypoints.min.js'></script>
 <script src='/resources/js/app.js'></script>
 </body>
 </html>

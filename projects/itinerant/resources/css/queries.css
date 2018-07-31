@@ -1,6 +1,155 @@
-@media (max-width: 960px) {
-    .header {
-        padding-right: 3rem;
-        padding-left: 3rem;
+@media (max-width: 500px) {
+    .row {
+        width: 414px;
+    }
+
+    .main-header {
+        width: 414px;
+    }
+
+    h2 {
+        font-size: 120%;
+    }
+
+    header {
+        width: 414px;
+    }
+
+    .logo {
+        position: absolute;
+        top: 3%;
+        left: 2%;
+        float: right;
+        height: 60px;
+        width: auto;
+    } 
+
+    .logo.mobile-op {
+        display: flex;
+        position: absolute;
+        top: 17%;
+        left: 2%;
+        float: left;
+        height: 60px;
+    }
+
+    .hero-text-box {
+        width: 390px;
+        padding-left: 10px;
+        top: 55%;
+    }
+
+    .hero-content {
+        width: 414px
+    }
+
+    .hero-text-box h1{
+        font-size: 160%;
+    }
+
+    .mobile-nav-icon {
+        display: inline-block;
+        padding-right: 20px;
+        z-index: 4;
+    }
+    .main-nav {display: none;}
+    .main-nav {
+        width: 414px;
+        padding-top: 140px;
+        padding-left: 20px;
+        padding-right: 20px;
+        float: left;
+        position: absolute;
+        top: -10%;
+        background-color: rgba(0, 0, 0, 0.966);
+        border-bottom: 1px solid #777;
+        z-index: 2;
+    }
+
+    #mobile-close {
+        position: absolute;
+        left: 83%;
+        top: 10%;
+    }
+
+    .main-nav li{
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    .main-nav li a:link,
+    .main-nav li a:visited, 
+    .main-nav li a:hover,
+    .main-nav li a:active {
+        border-bottom: none;
+        transition: 0.3s;
+    }
+
+    .main-nav li a:hover,
+    .main-nav li a:active {
+        transition: 0.5s;
+        border-bottom: none;
+        position: relative;
+        left: 10px;
+
+    }
+
+    #login-pop {
+        z-index: 10;
+    }
+
+    #main-page-footer {
+        top: 80%;
+    }
+
+    .fullscreen-video-wrap {
+        width: 414px;
+    }
+
+    .team-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+    }
+
+    .team-box {
+        margin-bottom: 30px;
+        width: 80%;
+    }
+}
+
+
+@media only screen and (min-width: 501px) and (max-width: 960px) {
+    .row {
+        width: 900px;
+    }
+
+    .main-header {
+        width: 900px;
+    }
+
+    header {
+        width: 960px;
+    }
+    
+    .logo {
+        left: 2%;
+        float: left;
+        height: 80px;
+        width: auto;
+    } 
+
+    .hero-text-box {
+        width: 960px;
+        padding-left: 50px;
+        top: 55%;
+    }
+
+    .hero-text-box h1{
+        font-size: 160%;
+    }
+
+    #main-page-footer {
+        top: 70%;
     }
 }

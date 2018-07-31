@@ -1,0 +1,16 @@
+@media only screen and (max-width: 500px) {
+    .contact-container {
+        width: 400px;
+    }
+    .header-contact {
+        width: 414px;
+    }
+    textarea {
+        max-width: 340px;
+    }
+
+    h2 {
+        font-size: 100%;
+    }
+    
+}

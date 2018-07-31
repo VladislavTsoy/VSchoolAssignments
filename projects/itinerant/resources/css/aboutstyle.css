@@ -117,7 +117,74 @@ blockquote img {
     margin-right: 15px;
 }
 
+/*---------------------------------------------*/
+/* TEAM-SECTION */
+/*---------------------------------------------*/
+
+.team-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+.team-box {
+    background-color: rgb(235, 235, 235);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(230, 230, 230, 0.623);
+    box-shadow: 8px 8px 8px rgba(59, 59, 59, 0.377);
+}
+.team-box p,
+.team-box img,
+.team-box h3 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+hr {
+    color: rgba(241, 241, 241, 0.192);
+}
+
+.team-bio {
+    text-align: center;
+    padding: 10px 10px 50px 10px;
+}
+
+.team-box img {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+
 
 /*---------------------------------------------*/
-/* FOOTER NAV */
+/* ANIMATION */
 /*---------------------------------------------*/
+
+.js--wp-1 {
+    opacity: 0;
+}
+
+.js--wp-1.animated {
+    opacity: 1;
+}
+
+.js--wp-2 {
+    opacity: 0;
+}
+
+.js--wp-2.animated {
+    transition: 1s;
+    opacity: 1;
+}
+
+.js--wp-7 {
+    opacity: 0;
+}
+
+.js--wp-7.animated {
+    transition: 1s;
+    opacity: 1;
+}
