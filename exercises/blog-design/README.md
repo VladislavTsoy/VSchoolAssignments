@@ -1,1 +1,1 @@
-Designed a blog style static web page
+A beautifully designed static blog style page written in HTML and CSS.
