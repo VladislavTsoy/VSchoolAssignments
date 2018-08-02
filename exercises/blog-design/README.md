@@ -1,0 +1,1 @@
+Designed a blog style static web page
