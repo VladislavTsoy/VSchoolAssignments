@@ -4,39 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="/resources/Grid.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet"> 
-</head>
+    <title>itinerant</title>
+    <link rel="stylesheet" href="/vendors/css/normalize.css">
+    <link rel="stylesheet" href="/vendors/css/ionicons.min.css">
+    <link rel="stylesheet" href="/vendors/css/grid.css">
+    <link rel="stylesheet" href="/vendors/css/animate.css">
 
+    <link rel="stylesheet" href="/resources/css/style.css">
+    <link rel="stylesheet" href="/resources/css/queries.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet"> 
+
+</head>
 <body>
-    <header>
+    <header id='main-header'>
         <nav>
+            <div class="fullscreen-video-wrap">
+                <video src="/resources/data/JAPAN  Travel Film.mp4" autoplay='true' loop='true' muted='muted'></video>
+            </div>
             <div class="row">
-                <img src="/resources/icon-white.png" alt="logo" class='logo'>
-                <ul class='main-nav'>
-                    <li><a href="#">Delivery</a></li>
-                    <li><a href="#">How it works</a></li>
-                    <li><a href="#">Our locations</a></li>
-                    <li><a href="#">Sign up</a></li>
+                <a href='/index.html'><img class='logo' src="/resources/img/itinerant-logo-white.png" alt="logo"></a>
+                <ul class="main-nav js--main-nav">
+                    <a href='/index.html'><img class='logo mobile-op' src="/resources/img/itinerant-logo-white.png" alt="logo"></a>
+                    <li><a id='active-tab' href='/index.html'>home</a></li>
+                    <li><a href='about.html'>What we do</a></li>
+                    <li><a href='/contact.html'>Contact us</a></li>
+                    <li><a id='btn-login' href='#'>Login</a></li>
+                    <li><a id='btn-sign' href='#'>Sign up</a></li>
+                    <a class='mobile-nav-icon js--nav-icon' id='mobile-close'><ion-icon class="name" name="close"></ion-icon></a>
                 </ul>
+                <a class='mobile-nav-icon js--nav-icon'><ion-icon class="name" name="menu"></ion-icon></a>
             </div>
         </nav>
-        <div class="header-text-box">
-            <h1>Goodbuy junk food.<br>Hello healthy meals.</h1>
-            <a href="#" class="btn btn-full">I'm hungry</a>
-            <a href="#" class="btn btn-ghost">Show me more</a>
+        <div class="hero-text-box">
+            <h1 class='js--wp-3' id='hero-content'>Your wolf pack has grown by one.</h1>
+            <div class=''>
+                <a class='btn btn-full' id='btn-login-main' href='#'>Login</a>
+                <a class='btn btn-ghost' href='#'>Sign up</a>
+            </div>
         </div>
+
+        <div id='login-pop'>
+            <button id='login-close'>x</button>
+            <form class='my-login'>
+                <p>username:</p> <input type="text" name='user-name-login'>
+                <br><p>password:</p> <input type="text" name='user-password-login'>
+                <div class='login-submit'>
+                    <button>submit</button>
+                    <a href="#">cancel</a>
+                </div>
+            </form>
+        </div>
+
+        <footer id='main-page-footer'>
+                <a href="#" id='ig'><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="#" id='tw'><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="#" id='facebook'><ion-icon name="logo-facebook"></ion-icon></a>
+        </footer>
     </header>
 
-    <section class='food-delivery'>
-        <div class="row">
-            <h2>get food fast - not fast food</h2>
-            <p>Hello, we're Food Steez, your new premium food delivery service. We know you're always busy. No time for cooking. So let us take care of that, we're really good at it, we promise! </p>
-        </div>
-    </section>
-
-<script src='app.js'></script>    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src='/resources/js/animation.js'></script>
+<script src="https://unpkg.com/ionicons@4.2.5/dist/ionicons.js"></script>
+<script src='/vendors/js/jquery.waypoints.min.js'></script>
+<script src='/resources/js/app.js'></script>
 </body>
 </html>
