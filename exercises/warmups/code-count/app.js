@@ -16,6 +16,6 @@ function codeCount(string) {
 function altCodeCount(string){
     return string.match(/co.e/gmi).length
 }
-3
+
 console.log(codeCount("cozexxcope"))
 
