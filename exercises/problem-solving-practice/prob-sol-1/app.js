@@ -8,6 +8,9 @@ function myMax(arr) {
     return max;
 }
 
+
+
+
 function findWord(arr, letter) {
     var words = []
     for(var i = 0; i < arr.length; i++){
@@ -21,6 +24,12 @@ function findWord(arr, letter) {
     }
     return words;
 }
+
+
+
+
+
+
 
 function isDivisible(a, b){
     return (a % b === 0) ? true : false;
