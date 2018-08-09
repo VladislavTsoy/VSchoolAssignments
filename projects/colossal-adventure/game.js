@@ -35,7 +35,7 @@ term.yellow(`
 
 player.name = readline.question("\nProfessor Oak: Hey there! my name is Professor Oak, what's your name? ")
 gameFunctions.myClear()
-console.log(`\nProfessor Oak: Welcome to the world of Pokemon, ${player.name}! \nis inhabited by creatures called POKEMON! \nFor some people, POKEMON are pets. Others use them for fights. \nMyself...I study POKEMON as a profession.`)
+console.log(`\nProfessor Oak: ${player.name}, welcome! \nThis world is inhabited by creatures called POKEMON! \nFor some people, POKEMON are pets. Others use them for fights. \nMyself...I study POKEMON as a profession.`)
 boss.name = readline.question("\nProfessor Oak: This is my grandson. He's been a rival of yours since you were a baby.\nErr...what's his name again? ")
 gameFunctions.myClear()
 console.log(`\nProfessor Oak: Ah! ${boss.name}, thats right...how cound I forget. \n`)
@@ -58,7 +58,7 @@ player.pokemonNames.push(pokemonName)
 gameFunctions.myClear()
 console.log(`\nProfessor Oak: ${currentPokemon}, nice choice!`)
 console.log(`\nProfessor Oak: ${player.name}! Your very own POKEMON legend is about to unfold!\nA world of dreams and adventures with POKEMON awaits! Let's go!`)
-console.log('\n~~~~~~Mission: Capture as many pokemon as possible for Professor Oak~~~~~~~\n')
+console.log('\n~~~~~~Mission: Defeat as many pokemon as possible for Professor Oak~~~~~~~\n')
 console.log(`- Walk through the tall grass and capture pokemon, but watch out for ${boss.name}. He's up to no good. \n\n`)
 
 /**-------------------------------------------/
@@ -95,7 +95,7 @@ while(player.health > 0) {
                     var temp = gameFunctions.droppedItem()
                     player.pokeBag.push(temp)
                 } else {
-                    console.log('Oh no! Your Pokemon were defeated! need to rush to the nearest Poke Center.')
+                    console.log('Oh no! Your Pokemon was defeated! need to rush to the nearest Poke Center.')
                     console.log('\n\nGAME OVER!\n\n')
                 }
             } else if(selectedPokemon < 0){

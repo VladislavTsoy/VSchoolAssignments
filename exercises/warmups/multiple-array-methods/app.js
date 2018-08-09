@@ -58,7 +58,7 @@ function toDisplayInHTML(arr){
 
 }
 
-console.log(toDisplayInHTML([  
+toDisplayInHTML([  
     {
       firstName: "Sarah",
       lastName: "Palin",
@@ -80,4 +80,27 @@ console.log(toDisplayInHTML([
       lastName: "Mooney",
       age: 27
     }
-  ]))
+  ])
+
+
+[{
+    firstName: "Willy",
+    lastName: "Beamin",
+    age: 47
+  },{
+    firstName: "Frank",
+    lastName: "Zappa",
+    age: 12
+  },{
+    firstName: "Rick",
+    lastName: "Sanchez",
+    age: 78
+  },{
+    firstName: "Morty",
+    lastName: "Smith",
+    age: 13
+  },{
+    firstName: "Kyle",
+    lastName: "Mooney",
+    age: 27
+  }]

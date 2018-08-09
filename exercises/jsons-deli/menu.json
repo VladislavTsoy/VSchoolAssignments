@@ -1,0 +1,62 @@
+{
+    "appetizers": [
+        {
+            "name": "Calamari",
+            "ingredients": ["Octopus", "Bread crumbs", "Oil", "Marinara Sauce"],
+            "description": "Friend Octopus"
+        },
+        {
+            "name": "Buffalo Wings",
+            "ingredients": ["Chicken wings", "Red Hot Buffalo sauce", "Oil"],
+            "description": "Fried buffalo wings in hot sauce"
+        }
+    ],
+    "cold sandwiches": [
+        {
+            "name": "Spicy Italian Sandwich",
+            "ingredients": ["Hoagie", "Salami", "Ham", "Lettuce", "Tomatoes"],
+            "description": "Foot long spicy italian sandwich"
+        },
+        {
+            "name": "Chicken Salad Sandwich",
+            "ingredients": ["Hoagie", "Chicken Salad"],
+            "description": "Chicken Salad Sandwich on a hoagie"
+        }
+    ],
+    "hot sandwiches": [
+        {
+            "name": "Meatball Sandwich",
+            "ingredients": ["Hoagie", "Meatballs", "Marinara Sauce"],
+            "description": "Classic meatball sandwich on a hoagie"
+        },
+        {
+            "name": "Grilled Cheese Sandwich",
+            "ingredients": ["Bread", "Cheddar Cheese", "Oil"],
+            "description": "Classic Grilled Cheese Sandwich"
+        }
+    ],
+    "deserts": [
+        {
+            "name": "Cheesecake",
+            "ingredients": ["Cheese", "Cake"],
+            "description": "Classic cheese cake"
+        },
+        {
+            "name": "Brownie",
+            "ingredients": ["Sugar", "Brownie Mix"],
+            "description": "Classic Brownies"
+        }
+    ],
+    "drinks": [
+        {
+            "name": "Water",
+            "ingredients": ["Hydrogen-2", "Oxygen"],
+            "description": "Water"
+        },
+        {
+            "name": "Sprite",
+            "ingredients": ["Sugar", "Water"],
+            "description": "Classic lime flavored Sprite"
+        }
+    ]
+}
