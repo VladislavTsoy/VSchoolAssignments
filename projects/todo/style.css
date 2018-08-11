@@ -1,0 +1,81 @@
+@font-face {
+    font-family: nike;
+    src: url(/futura/Futura\ Condensed\ Extra\ Bold.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    background-color: rgb(0, 0, 0);    
+}
+
+
+/*       REUSEABLE COMPONENTS         */
+
+.row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons {
+    width: 200px;
+    margin: 40px auto 20px auto;
+    justify-content: space-around;
+}
+
+.buttons button {
+    padding: 5px 20px;
+    font-size: 120%;
+    letter-spacing: 1px;
+    font-weight: 300;
+    margin: 0 10px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10%;
+    background-color: rgba(255, 255, 255, 0.705);
+    transition: .2s;
+}
+
+.buttons button:hover,
+.buttons button:active {
+    background-color: rgb(233, 233, 233);
+}
+.buttons button:active {
+    position: relative;
+    top: 2px;
+    left: 2px;
+}
+
+
+.container {
+    width: 800px;
+    height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 40px;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 5%;
+}
+
+.container h1{
+    padding-top: 20px;
+    padding-bottom: 40px;
+    font-family: nike;
+    font-size: 280%;
+}
+
+.title {
+    font-family: sans-serif;
+    font-size: 150%;
+    list-style: none;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.form-container {
+    display: none;
+}

@@ -21,4 +21,3 @@ function isPalindrome(str) {
 function isAlpha(ch){
     return /^[A-Z]$/i.test(ch);
 }
-
