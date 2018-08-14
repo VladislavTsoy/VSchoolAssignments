@@ -23,6 +23,7 @@ function displayData(data){
         if(a.name < b.name) return -1
         return 0
     })
+    
     for(var i = 0; i < pokeArr.length; i++){
         var li = document.createElement('li')
         var cap = pokeArr[i].name[0].toUpperCase()

@@ -3,6 +3,8 @@ var rst = document.getElementById('reset')
 var display = document.getElementById('container')
 var num = document.createElement("h1")
 var count = 0;
+
+
 count = localStorage.getItem("c")
 num.textContent = count
 display.appendChild(num)

@@ -15,29 +15,43 @@
         <div id="list">
             <div class="row title">
                 <li>done</li>
+                <li>img</li>
+                <li>price</li>
                 <li>item</li>
                 <li>description</li>
-                <li>price</li>
+                <li></li>
+                <li></li>
+                
             </div>
-
+            <hr>
         </div>
 
         <div class='buttons row'> 
-            <button>add</button>
-            <button>edit</button>
-            <button>delete</button>
-        </div>
-        
-        <div class='form-container'>
-            <form>
-                to do: <br><input type="text"><br>
-                description:<br><input type="textarea"><br>
-                price: <br><input type="number"><br>
-            </form>
+            <button id='btn-add'>add</button>
         </div>
 
     </div>
+    <div class='form-container'>
+        <button id='btn-close'>x</button>
+        <form id="add-form">
+            add image: <br><input type="text" name='thumbnail' required><br>
+            to do: <br><input type="text" name='title' required><br>
+            price: <br><input type="number" name="price" value="0"><br>
+            description:<br><textarea rows='3' name="description"></textarea><br>
+            <button id='btn-submit'>add</button>
+        </form>
+    </div>
+    <div class='edit-container'>
+        <button id='btn-close1'>x</button>
+        <form id="edit-form">
+            add image: <br><input id='src-field' type="text" name='thumbnail' required><br>
+            to do: <br><input id='item-field' type="text" name='title' required><br>
+            price: <br><input id='price-field' type="number" name="price" value="0"><br>
+            description:<br><textarea id='desc-field' rows='3' name="description"></textarea><br>
+            <button id='btn-submit1'>submit changes</button>
+        </form>
+    </div>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-<script src='app.js'></script>
+<script src='/app.js'></script>
 </body>
 </html>

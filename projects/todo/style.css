@@ -1,3 +1,8 @@
+/*--------------------*/
+/* - CSS SETUP -*/
+/*--------------------*/
+
+
 @font-face {
     font-family: nike;
     src: url(/futura/Futura\ Condensed\ Extra\ Bold.otf);
@@ -8,17 +13,32 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    text-transform: uppercase;
 }
 body {
     background-color: rgb(0, 0, 0);    
 }
 
 
-/*       REUSEABLE COMPONENTS         */
+/*--------------------*/
+/* - REUSEABLE COMPONENTS -*/
+/*--------------------*/
+
+img {
+    height: 50px;
+    width: 50px;
+}
 
 .row {
     display: flex;
     justify-content: space-around;
+}
+
+#list.title{
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr 5fr 10fr 1fr 1fr;
+    grid-template-rows: 50px;
+    grid-gap: 5px;
 }
 
 .buttons {
@@ -28,20 +48,26 @@ body {
 }
 
 .buttons button {
-    padding: 5px 20px;
-    font-size: 120%;
+    padding: 10px 50px;
+    font-size: 130%;
     letter-spacing: 1px;
     font-weight: 300;
     margin: 0 10px;
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid #00ad8b;
+    color: #00ad8b;
     border-radius: 10%;
-    background-color: rgba(255, 255, 255, 0.705);
-    transition: .2s;
+    background-color: #1abc9c36;
+    transition: .3s;
+    
 }
 
 .buttons button:hover,
 .buttons button:active {
-    background-color: rgb(233, 233, 233);
+    background-color: #1abc9c;
+    color: white;
+    position: relative;
+    top: 1px;
+    left: 1px;
 }
 .buttons button:active {
     position: relative;
@@ -49,20 +75,27 @@ body {
     left: 2px;
 }
 
+/*--------------------*/
+/* - MAIN-CONTAINER -*/
+/*--------------------*/
+
 
 .container {
     width: 800px;
-    height: 800px;
+    height: auto;
+    min-height: 600px;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 40px;
     margin-top: 20px;
-    background-color: #fff;
-    border-radius: 5%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2%;
+    border: 4px rgb(0, 0, 0);
+    box-shadow: 5px 5px 5px rgb(119, 119, 119);
 }
 
 .container h1{
-    padding-top: 20px;
+    padding-top: 40px;
     padding-bottom: 40px;
     font-family: nike;
     font-size: 280%;
@@ -70,12 +103,104 @@ body {
 
 .title {
     font-family: sans-serif;
-    font-size: 150%;
+    font-size: 100%;
     list-style: none;
     font-weight: 300;
     letter-spacing: 1px;
+    /* margin-bottom: 20px; */
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr 5fr 10fr 1fr 1fr;
+    grid-template-rows: 50px;
+    grid-gap: 10px;
+    text-align: center;
 }
 
-.form-container {
-    display: none;
+hr {
+    color: grey;
 }
+
+#list {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*--------------------*/
+/* - FORM -*/
+/*--------------------*/
+
+.form-container,
+.edit-container {
+    background-color: rgba(207, 207, 207, 0.979);
+    position: fixed;
+    top: -1000%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 450px;
+    font-size: 100%;
+    border-radius: 2%;
+    font-family: sans-serif;
+    box-shadow: 10px 10px 10px #555;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+#btn-close,
+#btn-close1 {
+    position: relative;
+    top: 2%;
+    left: 90%;
+}
+
+#add-form,
+#edit-form {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input,
+textarea {
+    width: 80%;
+    font-size: 100%;
+    font-family: sans-serif;
+}
+
+#add-form > input,
+#add-form > textarea,
+#edit-form > input,
+#edit-form > textarea {
+    margin: 10px 0;
+}
+
+#btn-submit,
+#btn-submit1 {
+    font-family: sans-serif;
+    margin-top: 15px;
+    font-size: 100%;
+    padding: 10px 30px;
+    border-radius: 10%;
+    color: #16a085;
+    background-color: white;
+    border: 1px solid #16a085;
+    text-transform: uppercase;
+}
+/*--------------------*/
+/* - INDIVIDUAL ITEMS -*/
+/*--------------------*/
+
+.list-items {
+    display: grid;
+    list-style: none;
+    grid-template-columns: 1fr 3fr 3fr 5fr 10fr 1fr 1fr;
+    grid-template-rows: 50px;
+    grid-gap: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 80%;
+    text-align: center;
+}
+
