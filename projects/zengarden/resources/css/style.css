@@ -1,0 +1,33 @@
+/*------------------------------------------*/
+/*- BASIC SETUP -*/
+/*------------------------------------------*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: font1;
+    src: url(/vendors/fonts/1Pt2g8TAX_SGgBGUi0tGOYEga5WOwnsXy6KHHg.woff2)
+}
+
+@font-face {
+    font-family: font2;
+    src: url(/vendors/fonts/kmKhZrc3Hgbbcjq75U4uslyuy4kn0qNcWxEQDO-Wyrs.woff2)
+}
+
+@font-face {
+    font-family: font3;
+    src: url(/vendors/fonts/kmKnZrc3Hgbbcjq75U4uslyuy4kn0qNZaxMaC82U.woff2)
+}
+
+@font-face {
+    font-family: font4;
+    src: url(/vendors/fonts/verdemoderna.woff)
+}
+
+/*------------------------------------------*/
+/*- BASIC SETUP -*/
+/*------------------------------------------*/
