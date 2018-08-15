@@ -31,3 +31,18 @@
 /*------------------------------------------*/
 /*- BASIC SETUP -*/
 /*------------------------------------------*/
+
+header {
+    background-image: url(/resources/img/contours.png), url(/resources/img/huntington.jpg);
+    height: 50vh;
+    background-position: center left cover;
+}
+
+header h1 {
+    font-family: font1;
+    color: white;
+    font-weight: 300;
+}
+header h2 {
+    font-family: font2;
+}
