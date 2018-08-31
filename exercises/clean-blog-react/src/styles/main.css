@@ -1,0 +1,32 @@
+.main-container {
+    width: 50%;
+    margin: 40px auto;
+}
+
+.main-container button {
+    background-color: #4da4fa;
+    color: white;
+    font-size: 90%;
+    font-weight: 800;
+    transition: .3s;
+}
+
+.main-container button:hover {
+    background-color: #4694e2;
+}
+
+.btn-next {
+    float: right;
+    position: relative;
+    top: 60px;
+    padding: 15px 30px;
+}
+
+.arrow {
+    height: 15px;
+    width: auto;
+    filter: invert(100);
+    position: relative;
+    top: 4px;
+    left: 6px;
+}

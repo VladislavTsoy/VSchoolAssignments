@@ -1,0 +1,45 @@
+.blog-item {
+    padding: 20px;
+    font-size: 180%;
+    font-family: sans-serif;
+    margin-top: 40px;
+    overflow: hidden;
+}
+
+.blog-item a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.808);
+    transition: .3s;
+}
+
+.blog-item a:hover {
+    color: #74b9ff;
+}
+
+.blog-item h2 {
+    font-weight: 900;
+    padding-bottom: 15px;
+}
+
+.blog-item h4 {
+    font-weight: 300;
+    padding-bottom: 15px;
+    font-size: 90%;
+}
+
+.blog-item h6 {
+    color: #868e96;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.blog-item:after {
+    content: "";
+    border-bottom: 1px solid rgb(233, 233, 233);
+    margin-bottom: 40px;
+    margin-top: 40px;
+    position: absolute;
+    height: 1px;
+    width: 47%;
+}
+

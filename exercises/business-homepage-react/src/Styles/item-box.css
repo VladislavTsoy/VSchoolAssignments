@@ -1,0 +1,37 @@
+.item-box {
+    height: 300px;
+    width: 200px;
+    box-shadow: 5px 5px 5px grey;
+    background-color: rgb(231, 231, 231);
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+.headshot {
+    height: 110px;
+    border-bottom: 1px solid grey;
+}
+
+img {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.names {
+    height: 40px;
+    border-bottom: 1px solid grey;
+    position: relative;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.description {
+    height: 110px;
+    padding: 20px;
+}

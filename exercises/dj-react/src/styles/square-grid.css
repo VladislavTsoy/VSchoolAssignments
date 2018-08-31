@@ -1,0 +1,11 @@
+.square-grid {
+    margin: 50px auto;
+    padding: 10px;
+    display: grid;
+    height: 200px;
+    width: 200px;
+    background-color: rgb(192, 192, 192);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+}

@@ -1,0 +1,52 @@
+.main-nav {
+    height: 80vh;
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url(../Img/maxim-medvedev-788218-unsplash.jpg);
+    background-position: center bottom;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.main-nav ul{
+    list-style: none;
+    float: right;
+}
+
+.main-nav li {
+    display: inline-block;
+    padding: 0 15px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 100;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    
+}
+
+.navBar {
+    float: right;
+    font-size: 80%;
+    padding-top: 20px;
+    padding-right: 50px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: rgb(156, 156, 156);
+    transition: .3s;
+    padding-top: 60px;
+    padding-bottom: 3px;
+}
+
+.main-nav a:hover,
+.main-nav a:active {
+    color: rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.hero-text-box {
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

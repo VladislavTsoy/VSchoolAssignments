@@ -1,0 +1,1 @@
+let silenceTrump = s => s.replace(/[aeiou]/gi, '')

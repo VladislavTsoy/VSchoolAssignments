@@ -1,0 +1,13 @@
+.btn {
+    padding: 10px 40px;
+    background-color: rgba(204, 204, 204, 0.582);
+    box-shadow: 0px 1px 3px grey, 0 2px 2px grey;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: .3s;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #eee;
+}
