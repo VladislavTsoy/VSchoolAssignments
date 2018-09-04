@@ -1,36 +1,52 @@
-import React from 'react';
+import React, {Component} from 'react';
 import { connect } from 'react-redux'
 import { startTime, stopTime, resetTime } from '../redux'
 
-const Controller = props => {
-    let clearId
-    let flag = true
+let clearId;
+
+class Controller extends Component {
+    constructor(){
+        super()
+
+        this.state = {
+            flag: true
+        }
+    }
    
-    const handleStart = () => {
-        clearId = setInterval(props.startTime, 10)
-        if(flag) {
-            flag = false
-        }
+    handleStart = () => {
+        clearId = setInterval(this.props.startTime, 10)
+        this.handleBtn()
     }
 
-    const handleStop = () => {
-        clearInterval(clearId)
-        if(!flag){
-            flag = true
-        }
+    handleStop = () => {
+        clearInterval(clearId)  
+        this.handleBtn()
     }
 
-    const handleReset = () => {
-        props.resetTime()
+    handleReset = () => {
+        this.props.resetTime()
     }
 
-    return (
-        <div className="buttons-container">
-            <button onClick={handleStart}>START</button>
-            <button onClick={handleStop}>STOP</button>
-            <button onClick={handleReset}>RESET</button>
-        </div>
-    );
+    handleBtn = () => {
+        this.setState(prevState => {
+            return {
+                flag: !prevState.flag
+            }
+        })
+    }
+
+    render(){
+        return (
+            <div className="buttons-container">
+                {this.state.flag ? 
+                <button onClick={this.handleStart}>START</button>
+                :
+                <button onClick={this.handleStop}>STOP</button>
+                }
+                <button onClick={this.handleReset}>RESET</button>
+            </div>
+        );
+    }
 };
 
 export default connect(null, { startTime, stopTime, resetTime })(Controller)

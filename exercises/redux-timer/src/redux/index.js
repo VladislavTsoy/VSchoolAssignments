@@ -5,7 +5,8 @@ const state = {
     hours: 0,
     minutes: 0,
     seconds: 0,
-    milliseconds: 0
+    milliseconds: 0,
+    flag: true
 }
 
 export const startTime = () => {
@@ -26,6 +27,12 @@ export const resetTime = () => {
     }
 }
 
+// export const handleBtn = () =>{
+//     return {
+//         type: "FLAG"
+//     }
+// }
+
 const reducer = (prevState = state, action) => {
     switch(action.type) {
         case "START_TIME":
@@ -36,28 +43,32 @@ const reducer = (prevState = state, action) => {
                             hours: prevState.hours + 1,
                             minutes: 0,
                             seconds: 0,
-                            milliseconds: 0
+                            milliseconds: 0,
+            
                         }
                     }
                     return { 
                         hours: prevState.hours,
                         minutes: prevState.minutes + 1,
                         seconds: 0,
-                        milliseconds: 0
+                        milliseconds: 0,
+        
                     }
                 } 
                 return {
                     hours: prevState.hours,
                     minutes: prevState.minutes,
                     seconds: prevState.seconds + 1,
-                    milliseconds: 0
+                    milliseconds: 0,
+    
                 }
             }
             return {
                 hours: prevState.hours,
                 minutes: prevState.minutes,
                 seconds: prevState.seconds,
-                milliseconds: prevState.milliseconds + 1
+                milliseconds: prevState.milliseconds + 1,
+
             }
 
         case "STOP_TIME":
@@ -65,7 +76,8 @@ const reducer = (prevState = state, action) => {
                 hours: prevState.hours,
                 minutes: prevState.minutes,
                 seconds: prevState.seconds,
-                milliseconds: prevState.milliseconds
+                milliseconds: prevState.milliseconds,
+            
             }
 
         case "RESET_TIME":
@@ -74,8 +86,10 @@ const reducer = (prevState = state, action) => {
                 hours: 0,
                 minutes: 0,
                 seconds: 0,
-                milliseconds: 0
+                milliseconds: 0,
+            
             }
+    
 
         default: 
             return prevState
