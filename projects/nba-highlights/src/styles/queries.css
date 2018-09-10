@@ -1,0 +1,196 @@
+@media only screen and (max-width: 500px) {
+    .main-nav {
+        width: 400px;
+    }
+
+    .main-nav a {
+        font-size: 90%;
+        margin-right: 20px;
+    }
+    .main-content-container {
+        width: 350px;
+    }
+
+    .team-container {
+        display: flex;
+        flex-wrap: wrap
+    }
+
+    .selectedTeamPlayersList {
+        width: 350px;
+    }
+
+    .player-attributes-container {
+        display: flex;
+        width: 400px;
+        justify-content: center;
+    }
+    .player-attributes-children {
+        width: 80px;
+        font-size: 90%;
+    }
+
+    .player-attributes-children.response {
+        display: none;
+    }
+
+    .search-bar-container form input {
+        width: 300px;
+    }
+
+    .player-profile-container {
+        top: 50%;
+        padding: 0 30px 10px 30px;
+        width: 350px;
+        font-size: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .player-profile-top-middle {
+        align-self: center;
+    }
+
+    .player-profile-top {
+        justify-content: space-around;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .player-profile-container img {
+        width: 250px;
+        height: auto;
+    }
+
+    .player-profile-top iframe {
+        margin-top: 10px;
+        width: 250px;
+        height: auto;
+        vertical-align: top;
+    }
+
+    .player-profile-bottom {
+        overflow: scroll;
+        
+    }
+
+    .player-profile-categories {
+        width: 900px;
+    }
+
+    .player-profile-stats {
+        width: 900px;
+    }
+
+    .responsive-menu {
+        display: block;
+    }
+
+    .visible-links {
+        display: none;
+        z-index: 20;
+        color: black;
+        position: absolute;
+        right: -50px;
+        top: 94px;
+        width: 300px;
+        background-color: rgb(0, 84, 164);
+    }
+
+    #alinks li{
+        width: 300px;
+        height: auto;
+        display: block;
+        margin-bottom: 20px;
+        padding-left: 40px;
+        padding-top: 20px;
+        border-top: 1px solid rgb(207, 207, 207);
+    }
+}
+
+
+@media only screen and (min-width: 501px) and (max-width: 960px) {
+    .main-nav {
+        width: 700px;
+    }
+
+    .main-content-container {
+        width: 600px;
+    }
+
+    .team-container {
+        display: flex;
+        flex-wrap: wrap
+    }
+
+    .selectedTeamPlayersList {
+        width: 600px;
+    }
+
+    .player-attributes-container {
+        display: flex;
+        width: 600px;
+    }
+    
+    .player-attributes-children {
+        width: 60px;
+    }
+
+    .search-bar-container form input {
+        width: 400px;
+    }
+
+    .player-profile-container {
+        top: 60%;
+        padding: 0 30px 10px 30px;
+        width: 600px;
+        font-size: 40%;
+    }
+
+    .player-profile-top {
+        justify-content: space-around;
+    }
+    .player-profile-container img {
+        height: 100px;
+        width: auto;
+    }
+
+    .player-profile-top iframe {
+        height: 130px;
+        width: 230px;
+        vertical-align: top;
+    }
+
+    .responsive-menu {
+        display: block;
+    }
+
+    .visible-links {
+        display: none;
+        z-index: 20;
+        color: black;
+        position: absolute;
+        right: -50px;
+        top: 94px;
+        width: 300px;
+        background-color: rgb(0, 84, 164);
+    }
+
+    #alinks li{
+        width: 300px;
+        height: auto;
+        display: block;
+        margin-bottom: 20px;
+        padding-left: 40px;
+        padding-top: 20px;
+        border-top: 1px solid rgb(207, 207, 207);
+    }
+}
+@media only screen and (min-width: 961px) {
+    ul#alinks.visible-links {
+        display: inline-block
+    }
+}

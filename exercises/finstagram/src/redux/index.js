@@ -1,4 +1,5 @@
 import { createStore } from 'redux'
+import uuidv4 from 'uuid'
 
 const state = {
     postsArr: [{
