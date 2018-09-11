@@ -31,7 +31,7 @@ class Navbar extends Component {
                         <div className="responsive-menu">
                             <Button color="secondary" ><MenuIcon /></Button>
                         </div>
-                        <ul className="visible-links" id="alinks" onClick={this.handleNav} style={this.state.toggle? {display: "block"} : {display: "none"}}>
+                        <ul className="visible-links" id="alinks" style={this.state.toggle? {display: "block"} : {display: "none"}}>
                             <li><Link to="/">News</Link></li>
                             <li><Link to="/teams">Teams</Link></li>
                             <li><Link to="players">Players</Link></li>

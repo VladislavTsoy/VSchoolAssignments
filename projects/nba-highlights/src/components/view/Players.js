@@ -7,6 +7,8 @@ import CircularProgress from '@material-ui/core/CircularProgress';
 import { Switch, Route, Link} from 'react-router-dom'
 import PlayerProfile from './PlayerProfile'
 import PlayerSearch from '../controller/PlayerSearch'
+import ListItem from '@material-ui/core/ListItem';
+import ListItemText from '@material-ui/core/ListItemText';
 
 class Players extends Component {
 
@@ -32,6 +34,27 @@ class Players extends Component {
             <div>
                 <List>
                     <PlayerSearch />
+                    <div className="player-profile-categories">
+                            <ListItem dense button>
+                                <ListItemText></ListItemText>
+                                <ListItemText>name</ListItemText>
+                                <ListItemText></ListItemText>
+                                <ListItemText></ListItemText>
+                                <ListItemText></ListItemText>
+                                <ListItemText></ListItemText>
+                                <ListItemText></ListItemText>
+                                <ListItemText>team</ListItemText>
+                                <ListItemText></ListItemText>
+                                <ListItemText></ListItemText>
+                                <ListItemText></ListItemText>
+                                <ListItemText>position</ListItemText>
+                                <ListItemText>jersey</ListItemText>
+                                <ListItemText>height</ListItemText>
+                                <ListItemText>weight</ListItemText>
+                                <ListItemText></ListItemText>
+                                <ListItemText></ListItemText>
+                            </ListItem>
+                        </div>
                     {displayPlayers}
                 </List>
                 <Switch>

@@ -8,8 +8,8 @@ import ListItemText from '@material-ui/core/ListItemText';
 import { Link} from 'react-router-dom'
 import Button from '@material-ui/core/Button'
 import CloseIcon from '@material-ui/icons/Clear';
+import { API_KEY } from '../../keys'
 
-const API_KEY = 'AIzaSyBHcKg4V07EubYoV_wOOpiTj4vP3WrBWzo'
 let selected = null
 
 

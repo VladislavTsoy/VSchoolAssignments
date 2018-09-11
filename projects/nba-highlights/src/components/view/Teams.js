@@ -37,6 +37,8 @@ import { getPlayers } from '../../redux'
 import { Link} from 'react-router-dom'
 import Button from '@material-ui/core/Button'
 import CloseIcon from '@material-ui/icons/Clear';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemText from '@material-ui/core/ListItemText';
 
 class Teams extends Component {
     constructor() {
@@ -210,7 +212,6 @@ class Teams extends Component {
                 return player
             }
         })
-        console.log(teamArr)
         this.setState(prevState => {
             return {
                 selectedTeamPlayers: [...teamArr],
@@ -234,6 +235,7 @@ class Teams extends Component {
         return (
             <div>
                 <div className="team-container">
+                    
                     {displayTeams}
                 </div>
                 {this.state.teamToggle ?
@@ -241,6 +243,26 @@ class Teams extends Component {
                     
                     <div className="selectedTeamPlayersList">
                         <Link to='/teams'><Button onClick={() => this.setState({teamToggle: false})}><CloseIcon /></Button></Link>
+                        TEAM ROSTER:
+                        <div className="player-profile-categories">
+                            <ListItem dense button>
+                                <ListItemText></ListItemText>
+                                <ListItemText>name</ListItemText>
+                                <ListItemText></ListItemText>
+                                <ListItemText></ListItemText>
+                                <ListItemText></ListItemText>
+                                <ListItemText>team</ListItemText>
+                                <ListItemText></ListItemText>
+                                <ListItemText></ListItemText>
+                                <ListItemText></ListItemText>
+                                <ListItemText>position</ListItemText>
+                                <ListItemText>jersey</ListItemText>
+                                <ListItemText>height</ListItemText>
+                                <ListItemText>weight</ListItemText>
+                                <ListItemText></ListItemText>
+                                <ListItemText></ListItemText>
+                            </ListItem>
+                        </div>
                         {displayTeamPlayers}
                     </div>
                 </div>
