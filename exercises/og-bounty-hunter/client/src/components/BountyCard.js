@@ -21,10 +21,6 @@ class BountyCard extends Component {
             open: false
         }
     }
-    handleDelete = () => {
-        let deleteObjKey = this.props.bounties.find(bounty => bounty.first === this.props.obj.first)
-        this.props.deleteBounty(deleteObjKey.id)
-    }
 
     handleClick = () => {
         this.setState(prevState => ({open: !prevState.open}))
@@ -55,7 +51,7 @@ class BountyCard extends Component {
                             <Button size="small" color="primary"><EditIcon /></Button>
                         </div> */}
                         <div className="delete-btn">
-                            <Button onClick={this.handleDelete} size="small" color="secondary"><DeleteIcon /></Button>
+                            <Button onClick={() => this.props.deleteBounty(this.props.obj._id)} size="small" color="secondary"><DeleteIcon /></Button>
                         </div>
                     </div>
                     

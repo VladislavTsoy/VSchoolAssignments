@@ -13,7 +13,7 @@ bountyRoutes.route('/')
         const newBounty = new Bounty(req.body)
         newBounty.save((err, newSavedBounty) => {
             if(err) return res.status(500).send(err)
-            return res.status(500).send(newSavedBounty)
+            return res.status(201).send(newSavedBounty)
         })
     })
 

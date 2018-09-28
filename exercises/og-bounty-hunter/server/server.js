@@ -8,6 +8,7 @@ const app = express()
 
 app.use(bodyParser.json())
 app.use(morgan('dev'))
+
 app.use('/bounty', require('./routes/bountyRoutes'))
 
 mongoose.connect('mongodb://localhost:27017/bounty-db', {useNewUrlParser: true})

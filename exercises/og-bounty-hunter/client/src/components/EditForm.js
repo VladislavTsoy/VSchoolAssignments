@@ -43,10 +43,8 @@ class EditForm extends Component {
 
     handleSubmit = e => {
         this.props.handleState()
-        let updatedObj = this.state
-        let updatedObjKey = this.props.bounties.find(bounty => bounty.first === this.props.obj.first && bounty.last === this.props.obj.last)
-        this.props.updateBounty(updatedObj, updatedObjKey.id)
-
+        
+        this.props.updateBounty(this.state, this.props.obj._id)
     }
 
     render() {
@@ -87,7 +85,7 @@ class EditForm extends Component {
                         helperText="is alive?"
                         margin="normal"
                         >
-                            <MenuItem key={true} value={true}>True</MenuItem>
+                            <MenuItem key={true} value={true} selected="true">True</MenuItem>
                             <MenuItem key={false} value={false}>False</MenuItem>
                     
                         </TextField>
@@ -129,7 +127,7 @@ class EditForm extends Component {
                         helperText="Jedi, Sith, or A.I."
                         margin="normal"
                         >
-                            <MenuItem key="Jedi" value="Jedi">Jedi</MenuItem>
+                            <MenuItem key="Jedi" value="Jedi" selected="true">Jedi</MenuItem>
                             <MenuItem key="Sith" value="Sith">Sith</MenuItem>
                             <MenuItem key="A.I." value="A.I.">A.I.</MenuItem>
                     

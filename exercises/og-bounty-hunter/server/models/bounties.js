@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 const bountiesSchema = new mongoose.Schema({
     first: String,
     last: String,
-    isALive: Boolean,
+    isAlive: Boolean,
     bounty: Number,
     type: String,
     avatar: String

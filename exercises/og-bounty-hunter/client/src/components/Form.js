@@ -41,11 +41,11 @@ class Form extends Component{
         this.setState({[name]: e.target.value})
     }
 
-    handleSubmit = (e) => {
-        e.preventDefault()
-        let newBounty = this.state
-        this.props.postBounty(newBounty)
-    }
+    // handleSubmit = (e) => {
+    //     e.preventDefault()
+    //     let newBounty = this.state
+    //     this.props.postBounty(newBounty)
+    // }
 
     render() {
         const { classes } = this.props
@@ -83,7 +83,7 @@ class Form extends Component{
                     helperText="is alive?"
                     margin="normal"
                     >
-                        <MenuItem key={true} value={true}>True</MenuItem>
+                        <MenuItem key={true} value={true} selected="true">True</MenuItem>
                         <MenuItem key={false} value={false}>False</MenuItem>
                    
                     </TextField>
@@ -124,12 +124,12 @@ class Form extends Component{
                     helperText="Jedi, Sith, or A.I."
                     margin="normal"
                     >
-                        <MenuItem key="Jedi" value="Jedi">Jedi</MenuItem>
+                        <MenuItem key="Jedi" value="Jedi" selected="true">Jedi</MenuItem>
                         <MenuItem key="Sith" value="Sith">Sith</MenuItem>
                         <MenuItem key="A.I." value="A.I.">A.I.</MenuItem>
                    
                     </TextField>
-                    <Button onClick={this.handleSubmit}>Add Bounty</Button>
+                    <Button onClick={() => this.props.postBounty(this.state) }>Add Bounty</Button>
             </form>
         );
     }

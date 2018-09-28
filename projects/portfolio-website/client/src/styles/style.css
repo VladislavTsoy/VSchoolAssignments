@@ -1,0 +1,135 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: rgb(84,84,84);
+    text-decoration: none;
+    
+}
+
+body {
+    background-color: rgb(250, 250, 250);
+    letter-spacing: 1px;
+}
+
+#copyright {
+    position: fixed;
+    transform: rotate(270deg);
+    bottom: 70px;
+    left: 0;
+    font-size: 60%;
+    font-weight: 400;
+}
+
+#spa-container {
+    height: 100vh;
+}
+
+
+#main-nav-container {
+    position: fixed;
+    width: 100vw;
+    padding-top: 20px;
+    background-color: rgb(250, 250, 250);
+    padding-bottom: 20px;
+}
+
+#logo {  
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 60%;
+    font-weight: 400;
+}
+
+#main-nav {
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 300;
+    font-size: 78%;
+}
+
+#main-nav > a {
+    margin-right: 25px;
+}
+
+#main-nav a:hover {
+    text-decoration: underline;
+}
+
+#main-display {
+    padding-top: 60px;
+    width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#project-container {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.month-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 60px;
+}
+
+.month-abbr {
+    position: absolute;
+    right: 5%;
+    font-size: 70%;
+    font-weight: 300;
+}
+
+.snapshot {
+    right: 30%;
+    font-size: 80%;
+    position: fixed;
+}
+
+.project-card {
+    height: 160px;
+    min-width: 160px;
+    max-width: 160px;
+    cursor: pointer;
+    margin-right: 80px;
+}
+
+.project-image {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 70vh;
+    width: auto;
+    margin-top: 15vh;
+    z-index: -10;
+    /* box-shadow: 0 2px 2px 0 rgba(0,0,0,0.3), 0 1px 3px -2px rgba(0,0,0,0.2), 0px 1px 5px 0 rgba(0,0,0,0.3) */
+}
+
+.project-date {
+    font-size: 60%;
+    font-weight: 300;
+    padding-bottom: 3px;
+}
+
+.project-title {
+    font-weight: 700;
+    font-size: 110%;
+    padding-bottom: 3px;
+}
+
+.project-description {
+    font-weight: 400;
+    font-size: 75%;
+}
+
+.project-title:hover,
+.project-description:hover {
+    text-decoration: underline;
+}

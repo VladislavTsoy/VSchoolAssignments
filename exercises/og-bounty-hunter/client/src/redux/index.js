@@ -25,6 +25,9 @@ export const postBounty = obj => {
                 data: res.data
             })
         })
+        .catch(err => {
+            console.log(err)
+        })
     }
 }
 
@@ -53,21 +56,23 @@ export const deleteBounty = id => {
 const reducer = (prevState = state, action) => {
     switch(action.type) {
         case "GET_BOUNTIES": 
-            // console.log(action.data)
             return {
                 bounties: [...action.data]
             }
         case "POST_BOUNTY":
             return {
-                bounties: [...action.data]
-            }
-        case "DELETE_BOUNTY":
-            return {
-                bounties: [...action.data]
+                bounties: [...prevState.bounties, action.data]
             }
         case "UPDATE_BOUNTY":
             return {
-                bounties: [...action.data]
+                bounties: prevState.bounties.map(bounty => {
+                    if(bounty._id === action.data._id) return action.data
+                    return bounty
+                })
+            }
+        case "DELETE_BOUNTY":
+            return {
+                bounties: prevState.bounties.filter(bounty => bounty._id !== action.data.deletedBounty._id)
             }
         default:
             return prevState

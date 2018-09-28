@@ -41,6 +41,7 @@ export const getPlayers = () => {
                     }
                 })
                 const promises = playerList.map(player => {
+            
                     return axios.get(`https://nba-players.herokuapp.com/players/${player.last}/${player.first}`, {
                         responseType: 'arraybuffer'
                     })
@@ -49,7 +50,7 @@ export const getPlayers = () => {
                 return Promise.all(promises)
             })
             .then(responses => {
-
+        
                 responses.map((res, i) => {
                     const base64 = btoa(new Uint8Array(res.data).reduce((data, byte) => data + String.fromCharCode(byte), '', ), );
                     playerList[i].playerImg = "data:;base64," + base64
@@ -57,7 +58,7 @@ export const getPlayers = () => {
                 return playerList
 
             }).then( players => {
-                // console.log(players)
+                
                 const promises = players.map(player => {
                     return axios.get(VSCHOOL_URL + `https://nba-players.herokuapp.com/players-stats/${player.last}/${player.first}`)
                 })
