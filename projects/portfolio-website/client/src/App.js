@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-
 // stylesheet
 import './styles/style.css'
+import './styles/queries.css'
+
 // components
 import Navbar from './components/Navbar'
 import Main from './components/Main'

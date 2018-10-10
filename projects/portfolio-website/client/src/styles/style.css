@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    color: rgb(84,84,84);
+    color: rgb(44,44,44);
     text-decoration: none;
     
 }
@@ -41,6 +41,23 @@ body {
     left: 20px;
     font-size: 60%;
     font-weight: 400;
+}
+
+.social-links{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    top: 43vh;
+    left: 20px;
+    cursor: pointer
+}
+
+.social-links i{
+    margin-bottom: 10px;
+}
+
+.social-links i:hover {
+    filter: invert(50)
 }
 
 #main-nav {
@@ -132,4 +149,63 @@ body {
 .project-title:hover,
 .project-description:hover {
     text-decoration: underline;
+}
+
+.about-wrapper img{
+    height: 200px;
+    width: auto;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#about-description {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+#about-description h5{
+    font-size: 120%;
+    margin-bottom: 20px;
+}
+
+#about-description h6 {
+    font-size: 105%;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+/*------------ fade -----------*/
+
+.fade-appear {
+    opacity: 0;
+    z-index: 1;
+}
+
+.fade-appear.fade-appear-active {
+    opacity: 1;
+    transition: opacity 600ms linear
+}
+
+.contact-wrapper {
+    margin-top: 30px;
+}
+
+.contact-wrapper h5 {
+    font-size: 120%;
+    margin-bottom: 10px;
+}
+
+.contact-wrapper a {
+    font-weight: 300;
+    transition: filter 300ms;
+}
+
+.contact-wrapper a:hover {
+    filter: invert(50);
 }

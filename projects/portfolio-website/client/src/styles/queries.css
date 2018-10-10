@@ -1,0 +1,125 @@
+@media only screen and (max-width: 500px) {
+    #copyright {
+        left: -15px;
+    }
+    #main-nav {
+        float: right;
+    }
+
+    #main-display {
+        width: auto;
+    }
+    #project-container {
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .month-container {
+        flex-direction: column;
+    }
+
+    .project-card {
+        height: 200px;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-wrapper img {
+        width: 100px;
+        height: 100px;
+    }
+    #about-description {
+        width: 320px;
+        margin-left: 50px;
+    }
+
+    .contact-wrapper {
+        margin-left: 55px;
+        width: 300px;
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 768px) {
+    #copyright {
+        left: -15px;
+    }
+    #main-nav {
+        float: right;
+    }
+
+    #main-display {
+        width: 500px;
+    }
+    #project-container {
+        width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .month-container {
+        width: 500px;
+        flex-wrap: wrap;
+    }
+
+    .project-card {
+        height: 200px;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-wrapper img {
+        width: 100px;
+        height: 100px;
+    }
+    #about-description {
+        width: 450px;
+        margin-left: 50px;
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1025px) {
+    #copyright {
+        left: -15px;
+    }
+    #main-nav {
+        /* float: right; */
+        margin-left: auto;
+        width: 768px;
+    }
+
+
+    #main-display {
+        width: 768px;
+    }
+    #project-container {
+        width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .month-container {
+        width: 768px;
+        flex-wrap: wrap;
+    }
+
+    .project-card {
+        height: 200px;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-wrapper img {
+        width: 100px;
+        height: 100px;
+    }
+    #about-description {
+        width: 700px;
+        margin-left: 50px;
+        margin-bottom: 50px;
+    }
+}
