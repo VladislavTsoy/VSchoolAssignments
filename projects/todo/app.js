@@ -25,6 +25,8 @@ axios.get("https://api.vschool.io/vlad/todo/").then(function(response) {
  *  displayData() takes all objects in API and displays it in the list container
  */
 function displayData(item){
+    // consider only sending the data property when _calling_
+    // the function instead of making the function pick it out
     var info = item.data
     var temp = []
     for(var i = 0; i < info.length; i++){
@@ -32,6 +34,10 @@ function displayData(item){
         var id = info[i]._id
         idArr.push(id)
 
+        // instead of passing each property down separately, just
+        // pass the entire object. This will make your function
+        // more readable, too
+        // e.g.: displayListItem(info[i])
         displayListItem(info[i].title, info[i].description, info[i].price, id, info[i].imgUrl)
 
     }
@@ -40,6 +46,8 @@ function displayData(item){
 /**
  * displayListItem displays a single item
  */
+// As mentioned above, pass an object down instead of
+// each object property separately
 function displayListItem(t, p, d, id_, imgs){
     // console.log('displayListItem imgs: ' + imgs)
     // create parent div for object properties
